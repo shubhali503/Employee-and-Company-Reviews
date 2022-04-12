@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body style="background-image: url('images/companyupdate.jpg'); background-repeat: no-repeat;
+background-size: cover; background-position: center;">
+    <header>
+        <nav class="navbar navbar-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html">Reviews</a>
+              <!-- <button type="button" class="btn btn-outline-light d-flex me-3" data-bs-toggle="modal" data-bs-target="#loginModal">
+                Login
+            </button> -->
+            </div>
+          </nav>
+    </header>
+    
+    <main>
+        <div class="container companyupdate">
+            <h1 class="text-center">Update Your Details</h1>
+            <form action="companydetails.html">
+                <div class="form-group">
+                  <label for="companyname" class="form-label">Company's Name:</label>
+                  <input type="text" class="form-control input-lg" id="companyname" placeholder="Company's Name">
+                </div>
+
+                <div class="form-group">
+                  <label for="founded" class="form-label">Founded on:</label>
+                  <div class="founded">
+                      <input type="number" min="1" max="31" class="form-control input-lg" name="date" placeholder="DD">
+                      <input type="number" min="1" max="12" class="form-control input-lg" name="month" placeholder="MM">
+                      <input type="number" class="form-control input-lg" name="year" placeholder="YYYY">
+                  </div>
+                </div>
+    
+                <div class="form-group">
+                    <label for="location" class="form-label">Location:</label>
+                    <input type="text" class="form-control input-lg" id="location" placeholder="Location">
+                </div>
+
+                <div class="form-group">
+                  <label for="about" class="form-label">About:</label>
+                  <textarea class="form-control" id="about" rows="4" placeholder="About the Company..."></textarea>
+                </div>
+    
+                <div class="form-group">
+                  <label for="cindustry" class="form-label">Industry:</label>
+                  <select class="form-select form-control input-lg" aria-label="Default select example" id="cindustry" aria-placeholder="">
+                      <option>Advertising & Marketing</option>
+                      <option>Arts, entertainment & music</option>
+                      <option>Automotive</option>
+                      <option>Business services</option>
+                      <option>Consumer products & services</option>
+                      <option>Dental</option>
+                      <option>eCommerce</option>
+                      <option>Education</option>
+                      <option>Energy & natural resources</option>
+                      <option>Financial services</option>
+                      <option>Gambling</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label for="cservice" class="form-label">Service:</label>
+                  <select class="form-select form-control input-lg" aria-label="Default select example" id="cservice" aria-placeholder="">
+                      <option>Mobile App Development</option>
+                      <option>Web Development</option>
+                      <option>Custom Software Development</option>
+                      <option>UX/UI Design</option>
+                      <option>E-Commerce Development</option>
+                      <option>Web Design</option>
+                      <option>T Staff Augmentation</option>
+                      <option>Blockchain</option>
+                      <option>IoT Development</option>
+                      <option>Enterprise App Modernization</option>
+                      <option>IT Strategy Consulting</option>
+                  </select>
+                </div>
+    
+                <div class="form-group">
+                  <label for="csize" class="form-label">Agency Size:</label>
+                  <select class="form-select form-control input-lg" aria-label="Default select example" id="csize" aria-placeholder="">
+                    <option>2 - 9</option>
+                    <option>10 - 49</option>
+                    <option>50 - 249</option>
+                    <option>250 - 999</option>
+                    <option>1000 - 9999</option>
+                    <option>10000+</option>
+                  </select>
+                </div>
+    
+                <button type="submit" class="btn btn-success submit">Save Updates</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container-fluid">
+          <div class="social">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          </div>
+          
+          <div class="lists">
+            <ul>
+              <li>Reviews</li>
+              <li><a href="#">About/Press</a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>
+  
+            <ul>
+              <li>Community</li>
+              <li><a href="#">Help/Contact Us</a></li>
+              <li><a href="#">Guidelines</a></li>
+              <li><a href="#">Terms of use</a></li>
+              <li><a href="#">Privacy & Cookies</a></li>
+            </ul>
+  
+            <ul>
+              <li>Work With Us</li>
+              <li><a href="#">Advertisers</a></li>
+              <li><a href="#">Developers</a></li>
+              <li><a href="#">Careers</a></li>
+            </ul>
+          </div>
+  
+          <p class="text-muted">
+            &copy; Reviews 2022 
+          </p> 
+        </div>
+    </footer>
+
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

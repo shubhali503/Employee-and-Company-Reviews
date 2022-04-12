@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html">Reviews</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <div class="form-group has-search d-flex">
+                    <span class="fa fa-search form-control-feedback"></span>
+                    <input type="search" class="form-control me-4" placeholder="Search" aria-label="Search">
+                    <button type="button" class="btn btn-outline-light d-flex me-4" onclick="window.location.href='signup.html'">
+                        Sign Up
+                    </button>
+                    <button type="button" class="btn btn-outline-light d-flex me-4" data-bs-toggle="modal" data-bs-target="#loginModal">
+                        Login
+                    </button>
+                  </div>
+              </div>
+            </div>
+        </nav>
+    </header>
+    
+    <main>
+        <div class="container review">
+            <h1 class="display-4 text-center">Top App Developers in Chennai</h1>
+
+            <ul class="nav nav-tabs mt-4 mb-3" id="myTab0" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link active"
+                    id="home-tab0"
+                    data-bs-toggle="tab"
+                    data-bs-target="#companies"
+                    type="button"
+                    role="tab"
+                    aria-controls="home"
+                    aria-selected="true">
+                    Companies
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link"
+                    id="profile-tab0"
+                    data-bs-toggle="tab"
+                    data-bs-target="#employees"
+                    type="button"
+                    role="tab"
+                    aria-controls="profile"
+                    aria-selected="false">
+                    Employees
+                  </button>
+                </li>
+              </ul>
+
+              <div class="tab-content" id="myTabContent">
+
+                <div class="tab-pane fade show active" id="companies" role="tabpanel" aria-labelledby="home-tab0">
+                    <div class="form-group">
+                        <select class="form-select form-control input-lg" aria-label="Default select example" id="location" aria-placeholder="Select">
+                            <option>Location</option>
+                            <option>Delhi, India</option>
+                            <option>Ahmedabad, India</option>
+                            <option>Chennai, India</option>
+                            <option>Chandigarh, India</option>
+                        </select>
+
+                        <select class="form-select form-control input-lg" aria-label="Default select example" id="lookingfor" aria-placeholder="Select">
+                            <option>Services</option>
+                            <option>Mobile App Development</option>
+                            <option>Web Developers</option>
+                            <option>Software Developers</option>
+                            <option>eCommerce</option>
+                            <option>Digital Marketing</option>
+                            <option>SEO</option>
+                            <option>IT Services</option>
+                            <option>User Experience</option>
+                        </select>
+
+                        <select class="form-select form-control input-lg" aria-label="Default select example" id="reviewtype" aria-placeholder="Select">
+                            <option>Reviews</option>
+                            <option>1+</option>
+                            <option>2+</option>
+                            <option>3+</option>
+                            <option>4+</option>
+                            <option>5</option>
+                        </select>
+
+                        <select class="form-select form-control input-lg" aria-label="Default select example" id="agencysize" aria-placeholder="Select">
+                            <option>Agency Size</option>
+                            <option>2 - 9</option>
+                            <option>10 - 49</option>
+                            <option>50 - 249</option>
+                            <option>250 - 999</option>
+                            <option>1000 - 9999</option>
+                            <option>10000+</option>
+                        </select>
+
+                        <select class="form-select form-control input-lg" aria-label="Default select example" id="diversity" aria-placeholder="Select">
+                            <option>Support Diversity</option>
+                            <option>Veteran Owned</option>
+                            <option>Black Owned</option>
+                            <option>Asian Owned</option>
+                            <option>LGBTQ Owned</option>
+                            <option>Women Owned</option>
+                            <option>Minority Owned</option>
+                        </select>
+
+                        <button type="button" class="btn btn-outline-primary" style="padding:10px;">All Filters</button>
+                    </div>
+
+                    <div class="companylist mt-4">
+
+                        <div class="container">
+                            <div class="topcontainer">
+                                <img src="images/company1.jpg" alt="">
+                                <div>
+                                    <h4><a href="companydetails.html">HyperLink Infosystem</a></h4>
+                                    <p>Best Android & iPhone App Development Services</p>
+                                    <span class="rating me-2">4.9</span>
+                                    <a href="" class="star me-2">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star"></span>
+                                    </a>
+                                    <a href="companydetails.html#companyreviews" class="reviewlink">REVIEWS</a>
+                                </div>
+                                <div class="contactdet">
+                                    <button type="button" class="btn btn-info">Visit Website</button>
+                                    <button type="button" class="btn btn-info">Contact</button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-2">
+                                    <p><i class="fa-regular fa-circle-check"></i> &nbsp; VERIFIED</p>
+                                    <p><i class="fa-regular fa-user"></i> &nbsp; 50 - 249</p>
+                                    <p><i class="fa-solid fa-location-dot"></i> &nbsp; Chennai, India</p>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="graphtitle text-muted">Service Focus</div>
+                                    <div class="grapharea">
+                                        <div class="graph d-flex">
+                                            <div style="width: 20%;" data-bs-toggle="popover" data-bs-trigger="hover" data-bs-placement="top" data-bs-content="20% Mobile App Development"></div>
+                                            <div style="width: 20%;" data-bs-toggle="popover" data-bs-trigger="hover" data-bs-placement="top" data-bs-content="20% Custom Software Development"></div>
+                                            <div style="width: 20%;" data-bs-toggle="popover" data-bs-trigger="hover" data-bs-placement="top" data-bs-content="20% Branding"></div>
+                                            <div style="width: 40%;" data-bs-toggle="popover" data-bs-trigger="hover" data-bs-placement="top" data-bs-content="40% Web Development"></div>
+                                        </div>
+                                    </div>
+                                    <div>20% Mobile App Development</div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, eligendi? Quasi accusamus."</p>
+                                    <br>
+                                    <p>- Associate VP, Communication Group <i class="fa-regular fa-circle-check"></i></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="container">
+                            <div class="topcontainer">
+                                <img src="images/company-2.png" alt="">
+                                <div>
+                                    <h4><a href="companydetails.html">Algoworks</a></h4>
+                                    <p>Secure, Scalable, Human-centric Experiences</p>
+                                    <span class="rating me-2">4.9</span>
+                                    <a href="" class="star me-2">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star"></span>
+                                    </a>
+                                    <a href="companydetails.html#companyreviews" class="reviewlink">REVIEWS</a>
+                                </div>
+                                <div class="contactdet">
+                                    <button type="button" class="btn btn-info">Visit Website</button>
+                                    <button type="button" class="btn btn-info">Contact</button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-2">
+                                    <p><i class="fa-regular fa-circle-check"></i> &nbsp; VERIFIED</p>
+                                    <p><i class="fa-regular fa-user"></i> &nbsp; 50 - 249</p>
+                                    <p><i class="fa-solid fa-location-dot"></i> &nbsp; Chennai, India</p>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="graphtitle text-muted">Service Focus</div>
+                                    <div class="grapharea">
+                                        <div class="graph d-flex">
+                                            <div style="width: 20%;" data-bs-toggle="popover" data-bs-trigger="hover" data-bs-placement="top" data-bs-content="20% Mobile App Development"></div>
+                                            <div style="width: 20%;" data-bs-toggle="popover" data-bs-trigger="hover" data-bs-placement="top" data-bs-content="20% Custom Software Development"></div>
+                                            <div style="width: 20%;" data-bs-toggle="popover" data-bs-trigger="hover" data-bs-placement="top" data-bs-content="20% Branding"></div>
+                                            <div style="width: 40%;" data-bs-toggle="popover" data-bs-trigger="hover" data-bs-placement="top" data-bs-content="40% Web Development"></div>
+                                        </div>
+                                    </div>
+                                    <div>20% Mobile App Development</div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, eligendi? Quasi accusamus."</p>
+                                    <br>
+                                    <p>- Associate VP, Communication Group <i class="fa-regular fa-circle-check"></i></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="container">
+                            <div class="topcontainer">
+                                <img src="images/company3.png" alt="">
+                                <div>
+                                    <h4><a href="companydetails.html">Emizen Tech</a></h4>
+                                    <p>Your Ideas, Our Innovations!</p>
+                                    <span class="rating me-2">3.1</span>
+                                    <a href="" class="star me-2">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                    </a>
+                                    <a href="companydetails.html#companyreviews" class="reviewlink">REVIEWS</a>
+                                </div>
+                                <div class="contactdet">
+                                    <button type="button" class="btn btn-info">Visit Website</button>
+                                    <button type="button" class="btn btn-info">Contact</button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-2">
+                                    <p><i class="fa-regular fa-circle-check"></i> &nbsp; VERIFIED</p>
+                                    <p><i class="fa-regular fa-user"></i> &nbsp; 50 - 249</p>
+                                    <p><i class="fa-solid fa-location-dot"></i> &nbsp; Chennai, India</p>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="graphtitle text-muted">Service Focus</div>
+                                    <div class="grapharea">
+                                        <div class="graph d-flex">
+                                            <div style="width: 20%;" data-bs-toggle="popover" data-bs-trigger="hover" data-bs-placement="top" data-bs-content="20% Mobile App Development"></div>
+                                            <div style="width: 20%;" data-bs-toggle="popover" data-bs-trigger="hover" data-bs-placement="top" data-bs-content="20% Custom Software Development"></div>
+                                            <div style="width: 20%;" data-bs-toggle="popover" data-bs-trigger="hover" data-bs-placement="top" data-bs-content="20% Branding"></div>
+                                            <div style="width: 40%;" data-bs-toggle="popover" data-bs-trigger="hover" data-bs-placement="top" data-bs-content="40% Web Development"></div>
+                                        </div>
+                                    </div>
+                                    <div>20% Mobile App Development</div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, eligendi? Quasi accusamus."</p>
+                                    <br>
+                                    <p>- Associate VP, Communication Group <i class="fa-regular fa-circle-check"></i></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="container">
+                            <div class="topcontainer">
+                                <img src="images/company4.png" alt="">
+                                <div>
+                                    <h4><a href="companydetails.html">The NineHertz</a></h4>
+                                    <p>Mobile App and Web Development Company</p>
+                                    <span class="rating me-2">3.1</span>
+                                    <a href="" class="star me-2">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                    </a>
+                                    <a href="companydetails.html#companyreviews" class="reviewlink">REVIEWS</a>
+                                </div>
+                                <div class="contactdet">
+                                    <button type="button" class="btn btn-info">Visit Website</button>
+                                    <button type="button" class="btn btn-info">Contact</button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-2">
+                                    <p><i class="fa-regular fa-circle-check"></i> &nbsp; VERIFIED</p>
+                                    <p><i class="fa-regular fa-user"></i> &nbsp; 50 - 249</p>
+                                    <p><i class="fa-solid fa-location-dot"></i> &nbsp; Chennai, India</p>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="graphtitle text-muted">Service Focus</div>
+                                    <div class="grapharea">
+                                        <div class="graph d-flex">
+                                            <div style="width: 20%;" data-bs-toggle="popover" data-bs-trigger="hover" data-bs-placement="top" data-bs-content="20% Mobile App Development"></div>
+                                            <div style="width: 20%;" data-bs-toggle="popover" data-bs-trigger="hover" data-bs-placement="top" data-bs-content="20% Custom Software Development"></div>
+                                            <div style="width: 20%;" data-bs-toggle="popover" data-bs-trigger="hover" data-bs-placement="top" data-bs-content="20% Branding"></div>
+                                            <div style="width: 40%;" data-bs-toggle="popover" data-bs-trigger="hover" data-bs-placement="top" data-bs-content="40% Web Development"></div>
+                                        </div>
+                                    </div>
+                                    <div>20% Mobile App Development</div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, eligendi? Quasi accusamus."</p>
+                                    <br>
+                                    <p>- Associate VP, Communication Group <i class="fa-regular fa-circle-check"></i></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="container">
+                            <div class="topcontainer">
+                                <img src="images/company5.png" alt="">
+                                <div>
+                                    <h4><a href="companydetails.html">Blue Label Labs</a></h4>
+                                    <p>Strategy, design & development of digital products</p>
+                                    <span class="rating me-2">3.1</span>
+                                    <a href="" class="star me-2">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                    </a>
+                                    <a href="companydetails.html#companyreviews" class="reviewlink">REVIEWS</a>
+                                </div>
+                                <div class="contactdet">
+                                    <button type="button" class="btn btn-info">Visit Website</button>
+                                    <button type="button" class="btn btn-info">Contact</button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-2">
+                                    <p><i class="fa-regular fa-circle-check"></i> &nbsp; VERIFIED</p>
+                                    <p><i class="fa-regular fa-user"></i> &nbsp; 50 - 249</p>
+                                    <p><i class="fa-solid fa-location-dot"></i> &nbsp; Chennai, India</p>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="graphtitle text-muted">Service Focus</div>
+                                    <div class="grapharea">
+                                        <div class="graph d-flex">
+                                            <div style="width: 20%;" data-bs-toggle="popover" data-bs-trigger="hover" data-bs-placement="top" data-bs-content="20% Mobile App Development"></div>
+                                            <div style="width: 20%;" data-bs-toggle="popover" data-bs-trigger="hover" data-bs-placement="top" data-bs-content="20% Custom Software Development"></div>
+                                            <div style="width: 20%;" data-bs-toggle="popover" data-bs-trigger="hover" data-bs-placement="top" data-bs-content="20% Branding"></div>
+                                            <div style="width: 40%;" data-bs-toggle="popover" data-bs-trigger="hover" data-bs-placement="top" data-bs-content="40% Web Development"></div>
+                                        </div>
+                                    </div>
+                                    <div>20% Mobile App Development</div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, eligendi? Quasi accusamus."</p>
+                                    <br>
+                                    <p>- Associate VP, Communication Group <i class="fa-regular fa-circle-check"></i></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="container">
+                            <div class="topcontainer">
+                                <img src="images/company6.png" alt="">
+                                <div>
+                                    <h4><a href="companydetails.html">Netguru</a></h4>
+                                    <p>Building digital solutions for world changers</p>
+                                    <span class="rating me-2">3.1</span>
+                                    <a href="" class="star me-2">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                    </a>
+                                    <a href="companydetails.html#companyreviews" class="reviewlink">REVIEWS</a>
+                                </div>
+                                <div class="contactdet">
+                                    <button type="button" class="btn btn-info">Visit Website</button>
+                                    <button type="button" class="btn btn-info">Contact</button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-2">
+                                    <p><i class="fa-regular fa-circle-check"></i> &nbsp; VERIFIED</p>
+                                    <p><i class="fa-regular fa-user"></i> &nbsp; 50 - 249</p>
+                                    <p><i class="fa-solid fa-location-dot"></i> &nbsp; Chennai, India</p>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="graphtitle text-muted">Service Focus</div>
+                                    <div class="grapharea">
+                                        <div class="graph d-flex">
+                                            <div style="width: 20%;" data-bs-toggle="popover" data-bs-trigger="hover" data-bs-placement="top" data-bs-content="20% Mobile App Development"></div>
+                                            <div style="width: 20%;" data-bs-toggle="popover" data-bs-trigger="hover" data-bs-placement="top" data-bs-content="20% Custom Software Development"></div>
+                                            <div style="width: 20%;" data-bs-toggle="popover" data-bs-trigger="hover" data-bs-placement="top" data-bs-content="20% Branding"></div>
+                                            <div style="width: 40%;" data-bs-toggle="popover" data-bs-trigger="hover" data-bs-placement="top" data-bs-content="40% Web Development"></div>
+                                        </div>
+                                    </div>
+                                    <div>20% Mobile App Development</div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, eligendi? Quasi accusamus."</p>
+                                    <br>
+                                    <p>- Associate VP, Communication Group <i class="fa-regular fa-circle-check"></i></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="container">
+                            <div class="topcontainer">
+                                <img src="images/company7.png" alt="">
+                                <div>
+                                    <h4><a href="companydetails.html">Innowise Group</a></h4>
+                                    <p>IT Outsourcing & Staff Augmentation since 2007</p>
+                                    <span class="rating me-2">3.1</span>
+                                    <a href="" class="star me-2">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                    </a>
+                                    <a href="companydetails.html#companyreviews" class="reviewlink">REVIEWS</a>
+                                </div>
+                                <div class="contactdet">
+                                    <button type="button" class="btn btn-info">Visit Website</button>
+                                    <button type="button" class="btn btn-info">Contact</button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-2">
+                                    <p><i class="fa-regular fa-circle-check"></i> &nbsp; VERIFIED</p>
+                                    <p><i class="fa-regular fa-user"></i> &nbsp; 50 - 249</p>
+                                    <p><i class="fa-solid fa-location-dot"></i> &nbsp; Chennai, India</p>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="graphtitle text-muted">Service Focus</div>
+                                    <div class="grapharea">
+                                        <div class="graph d-flex">
+                                            <div style="width: 20%;" data-bs-toggle="popover" data-bs-trigger="hover" data-bs-placement="top" data-bs-content="20% Mobile App Development"></div>
+                                            <div style="width: 20%;" data-bs-toggle="popover" data-bs-trigger="hover" data-bs-placement="top" data-bs-content="20% Custom Software Development"></div>
+                                            <div style="width: 20%;" data-bs-toggle="popover" data-bs-trigger="hover" data-bs-placement="top" data-bs-content="20% Branding"></div>
+                                            <div style="width: 40%;" data-bs-toggle="popover" data-bs-trigger="hover" data-bs-placement="top" data-bs-content="40% Web Development"></div>
+                                        </div>
+                                    </div>
+                                    <div>20% Mobile App Development</div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, eligendi? Quasi accusamus."</p>
+                                    <br>
+                                    <p>- Associate VP, Communication Group <i class="fa-regular fa-circle-check"></i></p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <nav aria-label="Page navigation example">
+                        <ul class="pagination">
+                          <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Previous">
+                              <span aria-hidden="true">&laquo;</span>
+                            </a>
+                          </li>
+                          <li class="page-item"><a class="page-link" href="#">1</a></li>
+                          <li class="page-item"><a class="page-link" href="#">2</a></li>
+                          <li class="page-item"><a class="page-link" href="#">3</a></li>
+                          <li class="page-item"><a class="page-link" href="#">4</a></li>
+                          <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Next">
+                              <span aria-hidden="true">&raquo;</span>
+                            </a>
+                          </li>
+                        </ul>
+                      </nav>
+                </div>
+
+                <div class="tab-pane fade" id="employees" role="tabpanel" aria-labelledby="profile-tab0">
+                    <div class="form-group">
+                        <select class="form-select form-control input-lg" aria-label="Default select example" id="location" aria-placeholder="Select">
+                            <option>Location</option>
+                            <option>Delhi, India</option>
+                            <option>Ahmedabad, India</option>
+                            <option>Chennai, India</option>
+                            <option>Chandigarh, India</option>
+                        </select>
+
+                        <select class="form-select form-control input-lg" aria-label="Default select example" id="lookingfor" aria-placeholder="Select">
+                            <option>Services</option>
+                            <option>Mobile App Development</option>
+                            <option>Web Developers</option>
+                            <option>Software Developers</option>
+                            <option>eCommerce</option>
+                            <option>Digital Marketing</option>
+                            <option>SEO</option>
+                            <option>IT Services</option>
+                            <option>User Experience</option>
+                        </select>
+
+                        <select class="form-select form-control input-lg" aria-label="Default select example" id="reviewtype" aria-placeholder="Select">
+                            <option>Reviews</option>
+                            <option>1+</option>
+                            <option>2+</option>
+                            <option>3+</option>
+                            <option>4+</option>
+                            <option>5</option>
+                        </select>
+
+                        <select class="form-select form-control input-lg" aria-label="Default select example" id="experience" aria-placeholder="Select">
+                            <option>Experience</option>
+                            <option>0 - 1</option>
+                            <option>2 - 4</option>
+                            <option>4 - 6</option>
+                            <option>6 - 8</option>
+                            <option>8 - 10</option>
+                            <option>10+</option>
+                        </select>
+
+                        <button type="button" class="btn btn-outline-primary"style="padding:10px;">All Filters</button>
+                    </div>
+
+                    <div class="employeelist mt-4">
+
+                        <div class="container">
+                            <div class="topcontainer">
+                                <img src="images/employee1.png" alt="">
+                                <div>
+                                    <h4><a href="employeedetails.html">Simran Wadhwa</a></h4>
+                                    <p>Senior App Developer at ABC Pvt. Ltd.</p>
+                                    <span class="rating me-2">4.9</span>
+                                    <a href="" class="star me-2">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star"></span>
+                                    </a>
+                                    <a href="" class="reviewlink">REVIEWS</a>
+                                </div>
+                                <div class="contactdet">
+                                    <button type="button" class="btn btn-info">Contact</button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <p><i class="fa fa-briefcase"></i> &nbsp; Experience: 3+ years</p>
+                                    <p><i class="fa-solid fa-laptop-code"></i> &nbsp; Skills:&nbsp; <span>C#</span> <span>Java</span> <span>Android</span></p>
+                                    <p><i class="fa-solid fa-location-dot"></i> &nbsp; Chennai, India</p>
+                                </div>
+                                <div class="col-lg-6">
+                                    <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, eligendi? Quasi accusamus."</p>
+                                    <br>
+                                    <p>- Technical Lead, ABC Pvt. Ltd. <i class="fa-regular fa-circle-check"></i></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="container">
+                            <div class="topcontainer">
+                                <img src="images/employee2.jpg" alt="">
+                                <div>
+                                    <h4><a href="employeedetails.html">Richa Singh</a></h4>
+                                    <p>Senior App Developer at HyperLink Infosystem</p>
+                                    <span class="rating me-2">4.9</span>
+                                    <a href="" class="star me-2">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star"></span>
+                                    </a>
+                                    <a href="" class="reviewlink">REVIEWS</a>
+                                </div>
+                                <div class="contactdet">
+                                    <button type="button" class="btn btn-info">Contact</button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <p><i class="fa fa-briefcase"></i> &nbsp; Experience: 3+ years</p>
+                                    <p><i class="fa-solid fa-laptop-code"></i> &nbsp; Skills:&nbsp; <span>C#</span> <span>Java</span> <span>Android</span></p>
+                                    <p><i class="fa-solid fa-location-dot"></i> &nbsp; Chennai, India</p>
+                                </div>
+                                <div class="col-lg-6">
+                                    <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, eligendi? Quasi accusamus."</p>
+                                    <br>
+                                    <p>- Technical Lead, Hyperlink Infosystem <i class="fa-regular fa-circle-check"></i></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="container">
+                            <div class="topcontainer">
+                                <img src="images/employee3.jpg" alt="">
+                                <div>
+                                    <h4><a href="employeedetails.html">Yash Sharma</a></h4>
+                                    <p>Senior App Developer at Algoworks</p>
+                                    <span class="rating me-2">3.1</span>
+                                    <a href="" class="star me-2">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                    </a>
+                                    <a href="" class="reviewlink">REVIEWS</a>
+                                </div>
+                                <div class="contactdet">
+                                    <button type="button" class="btn btn-info">Contact</button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <p><i class="fa fa-briefcase"></i> &nbsp; Experience: 3+ years</p>
+                                    <p><i class="fa-solid fa-laptop-code"></i> &nbsp; Skills:&nbsp; <span>C#</span> <span>Java</span> <span>Android</span></p>
+                                    <p><i class="fa-solid fa-location-dot"></i> &nbsp; Chennai, India</p>
+                                </div>
+                                <div class="col-lg-6">
+                                    <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, eligendi? Quasi accusamus."</p>
+                                    <br>
+                                    <p>- Technical Lead, Algoworks <i class="fa-regular fa-circle-check"></i></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="container">
+                            <div class="topcontainer">
+                                <img src="images/employee4.jpg" alt="">
+                                <div>
+                                    <h4><a href="employeedetails.html">Kartik Gupta</a></h4>
+                                    <p>Senior App Developer at Blue Label Labs</p>
+                                    <span class="rating me-2">3.1</span>
+                                    <a href="" class="star me-2">
+                                        <span class="fa-solid fa-star checked"></span>
+                                        <span class="fa-solid fa-star checked"></span>
+                                        <span class="fa-solid fa-star checked"></span>
+                                        <span class="fa-solid fa-star"></span>
+                                        <span class="fa-solid fa-star"></span>
+                                    </a>
+                                    <a href="" class="reviewlink">REVIEWS</a>
+                                </div>
+                                <div class="contactdet">
+                                    <button type="button" class="btn btn-info">Contact</button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <p><i class="fa fa-briefcase"></i> &nbsp; Experience: 3+ years</p>
+                                    <p><i class="fa-solid fa-laptop-code"></i> &nbsp; Skills:&nbsp; <span>C#</span> <span>Java</span> <span>Android</span></p>
+                                    <p><i class="fa-solid fa-location-dot"></i> &nbsp; Chennai, India</p>
+                                </div>
+                                <div class="col-lg-6">
+                                    <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, eligendi? Quasi accusamus."</p>
+                                    <br>
+                                    <p>- Technical Lead, Blue Label Labs <i class="fa-regular fa-circle-check"></i></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="container">
+                            <div class="topcontainer">
+                                <img src="images/employee5.png" alt="">
+                                <div>
+                                    <h4><a href="employeedetails.html">Ayush Rana</a></h4>
+                                    <p>Senior App Developer at Netguru</p>
+                                    <span class="rating me-2">3.1</span>
+                                    <a href="" class="star me-2">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                    </a>
+                                    <a href="" class="reviewlink">REVIEWS</a>
+                                </div>
+                                <div class="contactdet">
+                                    <button type="button" class="btn btn-info">Contact</button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <p><i class="fa fa-briefcase"></i> &nbsp; Experience: 3+ years</p>
+                                    <p><i class="fa-solid fa-laptop-code"></i> &nbsp; Skills:&nbsp; <span>C#</span> <span>Java</span> <span>Android</span></p>
+                                    <p><i class="fa-solid fa-location-dot"></i> &nbsp; Chennai, India</p>
+                                </div>
+                                <div class="col-lg-6">
+                                    <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, eligendi? Quasi accusamus."</p>
+                                    <br>
+                                    <p>- Technical Lead, Netguru <i class="fa-regular fa-circle-check"></i></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="container">
+                            <div class="topcontainer">
+                                <img src="images/employee6.png" alt="">
+                                <div>
+                                    <h4><a href="employeedetails.html">Sakshi Goel</a></h4>
+                                    <p>Senior App Developer at Innowise Group</p>
+                                    <span class="rating me-2">3.1</span>
+                                    <a href="" class="star me-2">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                    </a>
+                                    <a href="" class="reviewlink">REVIEWS</a>
+                                </div>
+                                <div class="contactdet">
+                                    <button type="button" class="btn btn-info">Contact</button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <p><i class="fa fa-briefcase"></i> &nbsp; Experience: 3+ years</p>
+                                    <p><i class="fa-solid fa-laptop-code"></i> &nbsp; Skills:&nbsp; <span>C#</span> <span>Java</span> <span>Android</span></p>
+                                    <p><i class="fa-solid fa-location-dot"></i> &nbsp; Chennai, India</p>
+                                </div>
+                                <div class="col-lg-6">
+                                    <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, eligendi? Quasi accusamus."</p>
+                                    <br>
+                                    <p>- Technical Lead, Innowise Group <i class="fa-regular fa-circle-check"></i></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="container">
+                            <div class="topcontainer">
+                                <img src="images/employee7.png" alt="">
+                                <div>
+                                    <h4><a href="employeedetails.html">Ramya Gupta</a></h4>
+                                    <p>Senior App Developer at Emizen Tech</p>
+                                    <span class="rating me-2">3.1</span>
+                                    <a href="" class="star me-2">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                    </a>
+                                    <a href="" class="reviewlink">REVIEWS</a>
+                                </div>
+                                <div class="contactdet">
+                                    <button type="button" class="btn btn-info">Contact</button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <p><i class="fa fa-briefcase"></i> &nbsp; Experience: 3+ years</p>
+                                    <p><i class="fa-solid fa-laptop-code"></i> &nbsp; Skills:&nbsp; <span>C#</span> <span>Java</span> <span>Android</span></p>
+                                    <p><i class="fa-solid fa-location-dot"></i> &nbsp; Chennai, India</p>
+                                </div>
+                                <div class="col-lg-6">
+                                    <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, eligendi? Quasi accusamus."</p>
+                                    <br>
+                                    <p>- Technical Lead, Emizen Tech <i class="fa-regular fa-circle-check"></i></p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <nav aria-label="Page navigation example">
+                        <ul class="pagination">
+                          <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Previous">
+                              <span aria-hidden="true">&laquo;</span>
+                            </a>
+                          </li>
+                          <li class="page-item"><a class="page-link" href="#">1</a></li>
+                          <li class="page-item"><a class="page-link" href="#">2</a></li>
+                          <li class="page-item"><a class="page-link" href="#">3</a></li>
+                          <li class="page-item"><a class="page-link" href="#">4</a></li>
+                          <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Next">
+                              <span aria-hidden="true">&raquo;</span>
+                            </a>
+                          </li>
+                        </ul>
+                      </nav>
+                </div>
+              </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container-fluid">
+          <div class="social">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          </div>
+          
+          <div class="lists">
+            <ul>
+              <li>Reviews</li>
+              <li><a href="#">About/Press</a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>
+  
+            <ul>
+              <li>Community</li>
+              <li><a href="#">Help/Contact Us</a></li>
+              <li><a href="#">Guidelines</a></li>
+              <li><a href="#">Terms of use</a></li>
+              <li><a href="#">Privacy & Cookies</a></li>
+            </ul>
+  
+            <ul>
+              <li>Work With Us</li>
+              <li><a href="#">Advertisers</a></li>
+              <li><a href="#">Developers</a></li>
+              <li><a href="#">Careers</a></li>
+            </ul>
+          </div>
+  
+          <p class="text-muted">
+            &copy; Reviews 2022 
+          </p> 
+        </div>
+      </footer>
+      
+      <script src="js/popper.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/app.js"></script>
+</body>
+</html>

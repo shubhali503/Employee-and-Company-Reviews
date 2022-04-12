@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reviews</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html">Reviews</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <div class="form-group has-search d-flex">
+                    <span class="fa fa-search form-control-feedback"></span>
+                    <input type="search" class="form-control me-4" placeholder="Search" aria-label="Search">
+                    <button type="button" class="btn btn-outline-light d-flex me-4" onclick="window.location.href='signup.html'">
+                        Sign Up
+                    </button>
+                    <button type="button" class="btn btn-outline-light d-flex me-4" data-bs-toggle="modal" data-bs-target="#loginModal">
+                        Login
+                    </button>
+                  </div>
+              </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="first" style="background-image: url('images/empb4.jpg'); background-repeat: no-repeat;
+        background-size: cover; background-position: center;">
+            <div class="container-fluid">
+                <h2 class="text-white">Welcome to Reviews</h2>
+                <h4 class="text-white">The resource you need to find the right company or employee.</h4>
+                <p class="text-white">Choose the best-fit company or employee for your business using reviews from real people.</p>
+                <div class="container firstform">
+                    <form action="review.html">
+                        <div class="form-group">
+                            
+                                <label for="lookingfor" class="form-label">I am looking for:</label>
+                            
+                                <select class="form-select form-control input-lg" aria-label="Default select example" id="lookingfor" aria-placeholder="Select">
+                                    <option>Mobile App Development</option>
+                                    <option>Web Developers</option>
+                                    <option>Software Developers</option>
+                                    <option>eCommerce</option>
+                                    <option>Digital Marketing</option>
+                                    <option>SEO</option>
+                                    <option>IT Services</option>
+                                    <option>User Experience</option>
+                                </select>
+                            
+                                <select class="form-select form-control input-lg" aria-label="Default select example" id="location" aria-placeholder="Select">
+                                    <option>Location</option>
+                                    <option>Delhi, India</option>
+                                    <option>Ahmedabad, India</option>
+                                    <option>Chennai, India</option>
+                                    <option>Chandigarh, India</option>
+                                </select>
+                            
+                                <button type="submit" class="btn btn-success btn-theme full-rounded">Search</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section id="second" class="mb-4">
+            <div class="container">
+              <h1 class="display-4 text-center">Welcome to your professional community</h1>
+                <div class= "row">
+                    <div class="col-lg-4 col-sm-12">
+                        <div class="card" style="width: 19.7rem">
+                            <img src="images/connect.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Connect with People</h5>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-12">
+                        <div class="card" style="width: 19.7rem">
+                            <img src="images/review.webp" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Read Millions of Reviews</h5>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-12">
+                        <div class="card" style="width: 19.7rem" >
+                            <img src="images/salary.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Compare Salaries</h5>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+                <div class="joinnow">
+                  <button type="button" class="btn btn-primary" onclick="window.location.href='signup.html'">Join Now</button>
+                </div>
+            </div>
+      </section>
+    </main>
+
+    <footer>
+        <div class="container-fluid">
+          <div class="social">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          </div>
+          
+          <div class="lists">
+            <ul>
+              <li>Reviews</li>
+              <li><a href="#">About/Press</a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>
+  
+            <ul>
+              <li>Community</li>
+              <li><a href="#">Help/Contact Us</a></li>
+              <li><a href="#">Guidelines</a></li>
+              <li><a href="#">Terms of use</a></li>
+              <li><a href="#">Privacy & Cookies</a></li>
+            </ul>
+  
+            <ul>
+              <li>Work With Us</li>
+              <li><a href="#">Advertisers</a></li>
+              <li><a href="#">Developers</a></li>
+              <li><a href="#">Careers</a></li>
+            </ul>
+          </div>
+  
+          <p class="text-muted">
+            &copy; Reviews 2022 
+          </p> 
+        </div>
+      </footer>
+
+    <!-- Login Form -->
+
+    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header border-bottom-0">
+              <h4 class="modal-title">Login</h4>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="d-flex flex-column text-center">
+                <form>
+                  <div class="form-group">
+                    <input type="email" class="form-control" id="email1" placeholder="Your email address...">
+                  </div>
+                  <div class="form-group">
+                    <input type="password" class="form-control" id="password1" placeholder="Your password...">
+                  </div>
+                  <button type="button" class="btn btn-primary btn-block btn-round" onclick="window.location.href='employee.html'">Login</button>
+                </form>
+                
+                <div class="text-center text-muted delimiter mt-3">or use a social network</div>
+                <div class="social-buttons">
+                  <a href="" class="btn btn-danger"><i class="fa-brands fa-google"></i></a>
+                  <a href="" class="btn btn-primary"><i class="fa-brands fa-facebook"></i></a>
+                  <a href="" class="btn btn-info"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer d-flex justify-content-center">
+              <div class="signup-section">Not a member yet? <a href="#" class="text-primary">Sign Up</a></div>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

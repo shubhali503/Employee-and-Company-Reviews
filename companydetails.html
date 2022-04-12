@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html">Reviews</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <div class="form-group has-search d-flex">
+                    <span class="fa fa-search form-control-feedback"></span>
+                    <input type="search" class="form-control me-4" placeholder="Search" aria-label="Search">
+                    <button type="button" class="btn btn-outline-light d-flex me-4" onclick="window.location.href='signup.html'">
+                        Sign Up
+                    </button>
+                    <button type="button" class="btn btn-outline-light d-flex me-4" data-bs-toggle="modal" data-bs-target="#loginModal">
+                        Login
+                    </button>
+                  </div>
+              </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container cdetails">
+            
+            <section id="summary">
+                <div class="container">
+                    <div class="row">
+                        <h4 class="mb-4">Summary</h4>
+                        <div class="col-lg-4 column1">
+                            <img src="images/company1.jpg" alt="">
+                            <h5>HyperLink Infosystem</h5>
+                            <p>Best Android & iPhone App Development Services</p>
+                            <span class="rating me-2">4.9</span>
+                            <a href="" class="star me-2">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                            </a>       
+                        </div>
+                        <div class="col-lg-5 column2">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, in. Laborum eaque voluptatum officia, nulla nesciunt molestias, facere eos inventore consequuntur quas, eligendi iste consequatur. Unde consequatur delectus animi dolores!</p>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi, voluptatem hic. Dolores voluptatibus sequi ducimus cupiditate porro! Quidem eum accusamus impedit? Tempore sed iusto nihil unde assumenda explicabo quasi sequi!</p>
+                            <a href="">Read More</a>
+                        </div>
+                        <div class="col-lg-3 column3">
+                            <img src="images/map1.png" alt="">
+                        </div>
+                        <button type="button" class="btn btn-outline-primary updatedetails" onclick="window.location.href='companyupdate.html'">Update Details</button>
+                    </div>
+                </div>
+            </section>
+
+            <section id="focus">
+                <div class="col-md-9">
+                    <h4 class="mb-4">Focus</h4>
+                    <div class="sec1focus">
+                        <div class="graphtitle text-muted">Service Lines</div>
+                        <div class="grapharea">
+                            <div class="graph d-flex">
+                                <div style="width: 20%;">20%</div>
+                                <div style="width: 20%;">20%</div>
+                                <div style="width: 20%;">20%</div>
+                                <div style="width: 40%;">40%</div>
+                            </div>
+                        </div>
+                        <div class="abilitylist">
+                            <div class="alitem">
+                                <span class="box box1"></span>
+                                <span>Custom Software Development</span>
+                            </div>
+                            <div class="alitem">
+                                <span class="box box2"></span>
+                                <span>Mobile App Development</span>
+                            </div>
+                            <div class="alitem">
+                                <span class="box box3"></span>
+                                <span>Branding</span>
+                            </div> 
+                        </div>
+                    </div>
+
+                    <div class="sec2focus">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="graphtitle text-muted">Client Focus</div>
+                                <div class="grapharea">
+                                <div class="graph d-flex">
+                                    <div style="width: 50%;">50%</div>
+                                    <div style="width: 50%;">50%</div>
+                                </div>
+                                </div>
+                            <div class="abilitylist">
+                                <div class="alitem">
+                                    <span class="box box1"></span>
+                                    <span>Midmarket ($10M - $1B)</span>
+                                </div>
+                                <div class="alitem">
+                                    <span class="box box2"></span>
+                                    <span>Small Business (&lt;$10M)</span>
+                                </div> 
+                            </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="graphtitle text-muted">Industry Focus</div>
+                                <div class="grapharea">
+                                <div class="graph d-flex">
+                                    <div style="width: 20%;">20%</div>
+                                    <div style="width: 20%;">20%</div>
+                                    <div style="width: 20%;">20%</div>
+                                    <div style="width: 10%;">10%</div>
+                                    <div style="width: 10%;">10%</div>
+                                    <div style="width: 10%;">10%</div>
+                                    <div style="width: 10%;">10%</div>
+                                </div>
+                                </div>
+                            <div class="abilitylist">
+                                <div class="alitem">
+                                    <span class="box box1"></span>
+                                    <span>eCommerce</span>
+                                </div>
+                                <div class="alitem">
+                                    <span class="box box2"></span>
+                                    <span>Business Services</span>
+                                </div>
+                                <div class="alitem">
+                                    <span class="box box3"></span>
+                                    <span>Education</span>
+                                </div> 
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="sec3focus">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="graphtitle text-muted">Application Platforms</div>
+                                <div class="grapharea">
+                                <div class="graph d-flex">
+                                    <div style="width: 50%;">50%</div>
+                                    <div style="width: 30%;">30%</div>
+                                    <div style="width: 10%;">10%</div>
+                                    <div style="width: 10%;">10%</div>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                    <div class="graphtitle text-muted">Branding Focus</div>
+                                    <div class="grapharea">
+                                <div class="graph d-flex">
+                                    <div style="width: 60%;">60%</div>
+                                    <div style="width: 10%;">10%</div>
+                                    <div style="width: 10%;">10%</div>
+                                    <div style="width: 10%;">10%</div>
+                                    <div style="width: 10%;">10%</div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="companyreviews">
+                <div class="container">
+                    <h4>Reviews</h4>
+                    <span class="rating me-2">4.9</span>
+                    <a href="" class="star me-2">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                    </a>
+                    <button type="button" class="btn btn-outline-primary ms-4 submitreview" data-bs-toggle="modal" data-bs-target="#submitreview">Submit a Review</button>
+                    <ul class="listreviews">
+                        <li>
+                            <div class="reviewdetails">
+                                <h6>"Hyperlink InfoSystem gives us a sense of security, and if problems arise, they find solutions."</h6>
+                                <div>
+                                    <span class="rating me-2">5.0</span>
+                                    <a href="" class="star me-2">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                    </a>
+                                </div>
+                            </div>
+                            <p class="text-muted">-18 Mar 1022 <br> Reviewer: &nbsp; <a href="employeedetails.html">Simran Wadhwa</a></p>
+                            <p class="feedback"><span>Feedback Summary:</span></p>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam cupiditate magni, aliquid unde autem earum, culpa iure, est aspernatur voluptatem incidunt commodi aut beatae minima non delectus voluptas quis excepturi.
+                            Porro unde illo laborum quaerat recusandae placeat dolorem, numquam iste alias animi deserunt? Eos, modi. Accusantium cum natus quam deserunt commodi architecto ex incidunt repudiandae sunt aspernatur! Magni, vero numquam?</p>
+                        </li>
+                        <hr>
+                        <li>
+                            <div class="reviewdetails">
+                                <h6>"I've come to really trust their suggestions."</h6>
+                                <div>
+                                    <span class="rating me-2">5.0</span>
+                                    <a href="" class="star me-2">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                    </a>
+                                </div>
+                            </div>
+                            <p class="text-muted">-17 Mar 2022 <br> Reviewer: &nbsp; <a href="employeedetails.html">Rahul Jain</a></p>
+                            <p class="feedback"><span>Feedback Summary:</span></p>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam cupiditate magni, aliquid unde autem earum, culpa iure, est aspernatur voluptatem incidunt commodi aut beatae minima non delectus voluptas quis excepturi.
+                            Porro unde illo laborum quaerat recusandae placeat dolorem, numquam iste alias animi deserunt? Eos, modi. Accusantium cum natus quam deserunt commodi architecto ex incidunt repudiandae sunt aspernatur! Magni, vero numquam?</p>
+                        </li>
+                        <hr>
+                        <li>
+                            <div class="reviewdetails">
+                                <h6>"I've been very happy with the entire process. They're a good company to work with."</h6>
+                                <div>
+                                    <span class="rating me-2">4.9</span>
+                                    <a href="" class="star me-2">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star"></span>
+                                    </a>
+                                </div>
+                            </div>
+                            <p class="text-muted">-15 Mar 2022 <br> Reviewer: &nbsp; <a href="employeedetails.html">Aashay Gupta</a></p>
+                            <p class="feedback"><span>Feedback Summary:</span></p>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam cupiditate magni, aliquid unde autem earum, culpa iure, est aspernatur voluptatem incidunt commodi aut beatae minima non delectus voluptas quis excepturi.
+                            Porro unde illo laborum quaerat recusandae placeat dolorem, numquam iste alias animi deserunt? Eos, modi. Accusantium cum natus quam deserunt commodi architecto ex incidunt repudiandae sunt aspernatur! Magni, vero numquam?</p>
+                        </li>
+                        <hr>
+                        <li>
+                            <div class="reviewdetails">
+                                <h6>"Hyperlink has been responsive and helpful throughout the project."</h6>
+                                <div>
+                                    <span class="rating me-2">4.8</span>
+                                    <a href="" class="star me-2">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star"></span>
+                                    </a>
+                                </div>
+                            </div>
+                            <p class="text-muted">-13 Mar 2022 <br> Reviewer: &nbsp; <a href="employeedetails.html">Dhruv Rathee</a></p>
+                            <p class="feedback"><span>Feedback Summary:</span></p>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam cupiditate magni, aliquid unde autem earum, culpa iure, est aspernatur voluptatem incidunt commodi aut beatae minima non delectus voluptas quis excepturi.
+                            Porro unde illo laborum quaerat recusandae placeat dolorem, numquam iste alias animi deserunt? Eos, modi. Accusantium cum natus quam deserunt commodi architecto ex incidunt repudiandae sunt aspernatur! Magni, vero numquam?</p>
+                        </li>
+                        <hr>
+                        <li>
+                            <div class="reviewdetails">
+                                <h6>"They really have a good understanding about the work that they're doing."</h6>
+                                <div>
+                                    <span class="rating me-2">4.8</span>
+                                    <a href="" class="star me-2">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star"></span>
+                                    </a>
+                                </div>
+                            </div>
+                            <p class="text-muted">-12 Mar 2022 <br> Reviewer: &nbsp; <a href="employeedetails.html">Arsh Gupta</a></p>
+                            <p class="feedback"><span>Feedback Summary:</span></p>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam cupiditate magni, aliquid unde autem earum, culpa iure, est aspernatur voluptatem incidunt commodi aut beatae minima non delectus voluptas quis excepturi.
+                            Porro unde illo laborum quaerat recusandae placeat dolorem, numquam iste alias animi deserunt? Eos, modi. Accusantium cum natus quam deserunt commodi architecto ex incidunt repudiandae sunt aspernatur! Magni, vero numquam?</p>
+                        </li>
+                    </ul>
+                    <nav aria-label="Page navigation example">
+                        <ul class="pagination">
+                          <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Previous">
+                              <span aria-hidden="true">&laquo;</span>
+                            </a>
+                          </li>
+                          <li class="page-item"><a class="page-link" href="#">1</a></li>
+                          <li class="page-item"><a class="page-link" href="#">2</a></li>
+                          <li class="page-item"><a class="page-link" href="#">3</a></li>
+                          <li class="page-item"><a class="page-link" href="#">4</a></li>
+                          <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Next">
+                              <span aria-hidden="true">&raquo;</span>
+                            </a>
+                          </li>
+                        </ul>
+                      </nav>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container-fluid">
+          <div class="social">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          </div>
+          
+          <div class="lists">
+            <ul>
+              <li>Reviews</li>
+              <li><a href="#">About/Press</a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>
+  
+            <ul>
+              <li>Community</li>
+              <li><a href="#">Help/Contact Us</a></li>
+              <li><a href="#">Guidelines</a></li>
+              <li><a href="#">Terms of use</a></li>
+              <li><a href="#">Privacy & Cookies</a></li>
+            </ul>
+  
+            <ul>
+              <li>Work With Us</li>
+              <li><a href="#">Advertisers</a></li>
+              <li><a href="#">Developers</a></li>
+              <li><a href="#">Careers</a></li>
+            </ul>
+          </div>
+  
+          <p class="text-muted">
+            &copy; Reviews 2022 
+          </p> 
+        </div>
+      </footer>
+
+      <!-- submit review modal -->
+
+      <div id="submitreview" class="modal fade">
+        <div class="modal-dialog modal-dialog-centered ">
+            <div class="modal-content">
+                <div class="modal-header text-white" style="background-color: #023e8a;">
+                    <h5 class="modal-title">Submit your Review</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="d-flex flex-column ">
+                            <form>
+
+                              <div class="form-group">
+                                <label for="revheading" class="form-label">Your Review:</label>
+                                <textarea class="form-control" id="revheading" rows="2" placeholder="Your review..."></textarea>
+                              </div>
+
+                              <div class="form-group">
+                                <label for="revdesc" class="form-label">Feedback Summary:</label>
+                                <textarea class="form-control" id="revdesc" rows="4" placeholder="Feedback summary..."></textarea>
+                              </div>
+
+                              <div class="form-group">
+                                <label for="starrating" class="form-label">Rating:</label>
+                                <input type="number" class="form-control input-lg" step=".1" id="starrating" placeholder="Rating out of 5">
+                              </div>
+
+                              <button type="submit" class="btn btn-primary btn-block btn-round">Submit</button>
+                            </form>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

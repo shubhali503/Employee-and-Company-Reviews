@@ -1,0 +1,1035 @@
+.navbar{
+    position: fixed !important;
+    top: 0px;
+    background-color: #023e8a;
+    opacity: 0.9;
+    width:100%;
+    z-index: 4;
+    font-size: 16px;
+}
+
+.navbar .nav-item{
+    padding-left: 30px;
+}
+
+.navbar a{
+    color: white !important;
+}
+
+.navbar-brand{
+    font-weight: bold;
+    font-size: 23px;
+    padding-left: 25px;
+}
+
+.navbar form{
+    width: 35%;
+    padding-left: 30px;
+}
+
+.navbar .has-search{
+    margin: 0px auto;
+    flex-wrap: wrap;
+}
+
+.navbar .has-search .form-control {
+    /* width: 92%; */
+    margin: 0px auto;
+    border-radius: 15px;
+    padding-left: 2.4rem;
+    width: 400px;
+}
+
+  .navbar .has-search .form-control-feedback {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 2.4rem;
+    height: 2.4rem;
+    line-height: 2.4rem;
+    text-align: center;
+    pointer-events: none;
+    color: #aaa;
+}
+
+@media (max-width: 600px){
+    .navbar .has-search{
+        margin-left: 20px;
+        width: 90%;
+    }
+    .navbar .has-search .form-control{
+        width: 220px;
+    }
+}
+
+
+#first{
+    margin-top: 60px;
+    padding: 20px 0px;
+}
+
+#first .container-fluid{
+    padding: 20px;
+    text-align: center;
+    /* width: 55%; */
+    margin: 10px auto;
+}
+
+.firstform{
+    color: #fff;
+    font-size: 1.2rem;
+    margin: 30px auto 10px;
+    padding: 20px;
+}
+
+.firstform .form-group{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.firstform .form-select{
+    width: 37%;
+    padding: 10px 10px;
+}
+
+.firstform .btn{
+    background-color: #023e8a;
+    border: none;
+    padding: 10px;
+}
+
+@media (max-width: 600px){
+
+  .firstform .col-lg-3{
+      padding: 5px 0px;
+  }
+
+  .firstform .form-group{
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .firstform .form-select{
+      width: 90%;
+      margin-bottom: 15px;
+  }
+}
+
+
+
+#second{
+    background-color: #44b01200;
+    margin-top: 20px;
+  }
+
+#second h1{
+    padding: 20px;
+}
+
+  #second .row{
+    margin: 10px auto;
+    /* border: 2px solid black; */
+  }
+  
+  #second .row .card{
+    margin: 15px auto;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s;
+    padding: 10px;
+    border-radius: 20px;
+  }
+  
+  #second .row .card:hover{
+    transform: translateY(-3px);
+    transform: scale(1.03);
+  }
+  
+  #second .card img{
+    width: 90%;
+    /* width: 350px; */
+    height: 220px;
+    margin: 10px auto;
+  }
+  
+  .joinnow{
+    padding: 20px;
+    text-align: center;
+  }
+  
+  #second button{
+    margin: 0px auto;
+    padding: 10px 20px;
+    background-color: #023e8a;
+    border: none;
+  }
+
+  @media (max-width: 600px){
+      #second h1{
+          font-size: 1.9rem;
+      }
+  }
+
+
+/* --------------------Footer----------------------------- */
+
+footer{
+    background-color: #1b5195;
+    /* opacity: 0.9; */
+    padding: 40px 0;
+  }
+  
+  .social{
+    text-align: center;
+    padding-bottom: 25px;
+    
+  }
+  
+  .social a{
+    font-size: 2.3rem;
+    display: inline-block;
+    text-align: center;
+    margin: 0 25px;
+    color: #495057;
+  }
+
+  footer .lists{
+      width: 70%;
+      margin: 0px auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+  }
+
+  footer .lists li:first-of-type{
+      font-weight: 600;
+  }
+  
+  footer ul{
+    list-style: none;
+    font-size: 1.15rem;
+    padding-top: 20px;
+  }
+  
+  footer ul a{
+    text-decoration: none;
+    color: black;
+  }
+  
+  footer a:hover{
+    color: #212529;
+  }
+  
+  footer ul li{
+    padding: 4px;
+    color: #fff;
+  }
+  
+  footer p{
+    text-align: center;
+    padding-top: 40px;
+  }
+
+
+  /* -------------------------Login Form----------------------- */
+
+#loginModal .form-group{
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+  
+#loginModal .form-control{
+    display: inline-block;
+    width: 30%;
+    flex:3;
+    padding: 15px 10px;
+}
+
+#loginModal input{
+    width: 70%;
+}
+  
+/* .social-buttons a{
+    font-size: 1.7rem;
+    padding: 0px 5px 0px;
+} */
+
+.social-buttons .btn {
+	color: #fff;
+    margin: 15px 10px 10px;
+	font-size: 17px;
+	border-radius: 50%;
+	border: none;
+	transition: all 0.4s;
+}	
+
+.social-buttons .btn:hover {
+	opacity: 0.8;
+}
+.social-buttons .btn-primary {
+	background: #507cc0;
+}
+.social-buttons .btn-info {
+	background: #64ccf1;
+}
+.social-buttons .btn-danger {
+	background: #df4930;
+}
+
+
+
+/* ---------------------------------signup.html------------------------------ */
+
+.signup{
+    margin-top: 70px;
+    /* border: 2px solid black; */
+    padding: 3rem 1.7rem 0;
+    color: white;
+}
+
+.signup p{
+    font-size: 1.1rem;
+}
+
+.signup .nav-item button{
+    color: white;
+}
+
+.signup .nav-item button:hover{
+    color: black;
+}
+
+.signup ul{
+    width: 60%;
+    margin: 0px auto;
+}
+
+.signup form{
+    /* border: 2px solid red; */
+    padding: 1.5rem;
+    width: 60%;
+    margin: 20px auto 10px;
+    font-size: 1.1rem;
+}
+
+.signup form .submit{
+    margin: 30px auto 0px;
+    display: block;
+}
+
+.signup .form-group{
+    margin-bottom: 20px;
+    /* width: 50%; */
+  }
+  
+  .signup .form-label{
+    font-weight: 600;
+    color: #fff;
+  }
+
+  .signup .form-control{
+    /* display: inline-block;
+    width: 30%;
+    flex:3; */
+    margin: 5px 0 7px;
+    padding: 10px 10px;
+    background: #ffffff;
+    border: 2px solid #ebebeb;
+    }
+
+  .signup .form-control:focus{
+	border: 1px solid #fff;
+    }
+
+    .founded{
+        display: flex;
+        justify-content: space-between;
+      }
+    
+      .founded input{
+        width: 30%;
+        }
+
+@media(max-width: 600px){
+    .signup ul{
+        width: 90%;
+    }
+    .signup form{
+        width: 90%;
+    }
+}
+
+#skillsModal .modal-body{
+    font-size: 1.12rem;
+}
+
+#skillsModal .modal-header{
+  justify-content: center;
+}
+
+#skillsModal .form-group{
+    margin-bottom: 18px;
+}
+
+#skillsModal button[type="submit"]{
+    margin: 20px auto;
+    display: block;
+}
+
+#experienceModal .modal-body{
+    font-size: 1.12rem;
+}
+
+#experienceModal .modal-header{
+  justify-content: center;
+}
+
+#experienceModal .form-group{
+    margin-bottom: 18px;
+}
+
+#experienceModal button[type="submit"]{
+    margin: 20px auto;
+    display: block;
+}
+
+
+/* --------------------------employeedetails.html---------------------- */
+
+
+.empdetails{
+    margin: 80px auto 0px;
+    width: 95%;
+}
+
+#empdetails11 .container{
+    padding: 13% 30px 20px;
+    border: 1px solid lightgray;
+    border-radius: 15px;
+    background-color: #f7f7f7;
+    margin-top: 15px;
+}
+
+/* .bgcover{
+    height: 100px;
+    width: 100%;
+    background-color: #38b000;
+    margin:0;
+    padding: 0;
+} */
+
+#empdetails11 img{
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.empdetails .styleh4{
+    border-bottom: 3px solid #023e8a;
+    padding-bottom: 10px;
+}
+
+#about .container{
+    padding: 20px 30px;
+    border: 1px solid lightgray;
+    border-radius: 15px;
+    margin-top: 20px;
+}
+
+#about li{
+    padding: 6px 0px;
+}
+
+#experience .container{
+    padding: 20px 30px;
+    border: 1px solid lightgray;
+    border-radius: 15px;
+    margin-top: 20px;
+}
+
+#experience p{
+    margin-bottom: 1px;
+}
+
+#education .container{
+    padding: 20px 30px;
+    border: 1px solid lightgray;
+    border-radius: 15px;
+    margin-top: 20px;
+}
+
+#education p{
+    margin-bottom: 1px;
+}
+
+#landc .container{
+    padding: 20px 30px;
+    border: 1px solid lightgray;
+    border-radius: 15px;
+    margin-top: 20px;
+}
+
+#landc p{
+    margin-bottom: 1px;
+}
+
+#skills .container{
+    padding: 20px 30px;
+    border: 1px solid lightgray;
+    border-radius: 15px;
+    margin-top: 20px;
+}
+
+/* #writereview .container{
+    padding: 20px 30px;
+    border: 1px solid lightgray;
+    border-radius: 15px;
+    margin-top: 15px;
+}
+
+#writereview form button{
+    margin: 20px auto 0px;
+    display: block;
+} */
+
+#employeereviews .container{
+    padding: 20px 30px;
+    border: 1px solid lightgray;
+    border-radius: 15px;
+    margin-top: 15px;
+}
+
+#employeereviews .rating{
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+#employeereviews .star{
+    text-decoration: none;
+    color: #212529;
+}
+
+#employeereviews .checked{
+    color: orange;
+}
+
+#employeereviews .listreviews{
+    /* border: 2px solid black; */
+    margin: 30px 0px;
+}
+
+#employeereviews .listreviews li{
+    padding: 15px 0px;
+}
+
+.reviewdetails{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#employeereviews .pagination{
+    justify-content: center;
+    margin: 40px 0px 10px;
+}
+
+#employeereviews .feedback span{
+    border-bottom: 2px solid #023e8a;
+}
+
+
+
+/* ---------------------------review.html---------------------------------------- */
+
+.review{
+    margin-top: 60px;
+    /* border: 2px solid black; */
+    padding-top: 25px;
+}
+
+/* -------------company tab---------------- */
+
+#companies{
+    margin-top: 25px;
+}
+#companies .form-group{
+    /* padding: 20px 0px; */
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: space-around;
+}
+#companies .form-select{
+    width: 200px;
+    padding: 10px;
+}
+
+#companies .pagination{
+    justify-content: center;
+    margin: 30px 0px;
+}
+
+.companylist .container{
+    margin: 40px 0px 20px;
+    border: 1px solid #e4f0ff;
+    border-radius: 15px;
+    padding: 20px;
+    background: #fbfbfb;
+}
+
+.topcontainer{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.companylist img{
+    width: 65px;
+    height: 65px;
+    margin-right: 20px;
+}
+
+.contactdet{
+    margin-left: auto; 
+    margin-right: 10px;
+}
+
+.contactdet button{
+    background-color: #023e8a;
+    color: white;
+    padding: 8px 15px;
+    margin-top: 5px;
+    margin-right: 10px;
+}
+
+.companylist .rating{
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.companylist .star{
+    text-decoration: none;
+    color: #212529;
+}
+
+.companylist .checked{
+    color: orange;
+}
+
+.companylist .row{
+    /* border: 2px solid black; */
+    margin: 10px 0px;
+    padding-top: 15px;
+}
+
+.companylist .grapharea{
+    padding: 40px 0px;
+}
+
+.companylist .graph div{
+    height: 20px;
+    cursor: pointer;
+}
+.graph div:nth-child(1){
+    background-color: #3acc60;
+}
+.graph div:nth-child(2){
+    background-color: #1b85ce;
+}
+.graph div:nth-child(3){
+    background-color: #6a957d;
+}
+.graph div:nth-child(4){
+    background-color: #08537e;
+}
+.graph div:nth-child(5){
+    background-color: #267c87;
+}
+.graph div:nth-child(6){
+    background-color: #5d997e;
+}
+.graph div:nth-child(7){
+    background-color: #62ba56;
+}
+
+@media (max-width: 600px){
+    #companies .form-group{
+        /* flex-direction: column; */
+        /* align-content: center; */
+    }
+
+    #companies .form-select{
+        width: 110px ;
+    }
+
+    .contactdet button{
+        margin-top: 20px;
+    }
+}
+
+/* ----------------employee tab------------------ */
+
+#employees{
+    margin-top: 25px;
+}
+#employees .form-group{
+    /* padding: 20px 0px; */
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: space-around;
+}
+#employees .form-select{
+    width: 200px;
+    padding: 10px;
+}
+
+#employees .pagination{
+    justify-content: center;
+    margin: 30px 0px;
+}
+
+.employeelist .container{
+    margin: 40px 0px 20px;
+    border: 1px solid lightgray;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.employeelist img{
+    width: 65px;
+    height: 65px;
+    margin-right: 20px;
+}
+
+.employeelist .rating{
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.employeelist .star{
+    text-decoration: none;
+    color: #212529;
+}
+
+.employeelist .checked{
+    color: orange;
+}
+
+.employeelist .row{
+    /* border: 2px solid black; */
+    margin: 10px 0px;
+    padding-top: 15px;
+}
+
+.employeelist .col-lg-4 span{
+    background-color: lightgray;
+    padding: 4px 12px;
+    margin-right: 6px;
+}
+
+
+
+/* --------------------------companydetails.html--------------------------- */
+
+
+.cdetails{
+    border: 2px solid white;
+    margin-top: 60px;
+}
+
+#summary{
+    margin-top: 30px;
+}
+
+#summary .row{
+    border: 1px solid lightgray;
+    border-radius: 15px;
+    padding: 30px;
+}
+
+#summary .row img{
+    width: 170px;
+    height: 170px;
+    margin: 0px auto 20px;
+}
+
+#summary .column3 img{
+    width: 270px;
+    height: 190px;
+}
+
+#summary .rating{
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+#summary .star{
+    text-decoration: none;
+    color: #212529;
+}
+
+#summary .checked{
+    color: orange;
+}
+
+.updatedetails{
+    width: 150px;
+    margin-top: 20px;
+}
+
+
+
+#focus{
+    margin-top: 30px;
+    margin-bottom: 10px;
+    border: 1px solid lightgray;
+    border-radius: 15px;
+    padding: 30px;
+}
+.abilitylist{
+    display: flex;
+    flex-wrap: wrap;
+}
+.alitem{
+    margin: 20px 20px 20px 0px;
+    padding: 20px;
+}
+.box{
+    width: 20px;
+    height: 20px;
+    /* margin-right: 10px;
+    border: 1px solid black; */
+    display: inline-block;
+}
+.box1{
+    background-color: #3acc60;
+}
+.box2{
+    background-color: #1b85ce;
+}
+.box3{
+    background-color: #6a957d;
+}
+
+#focus .grapharea{
+    padding: 30px 0px 10px;
+}
+
+.graph div{
+    color: white;
+    text-align: center;
+    padding: 4px;
+    cursor: pointer;
+}
+
+
+
+#companyreviews{
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+#companyreviews .container{
+    border: 1px solid lightgray;
+    border-radius: 15px;
+    padding: 30px;
+}
+
+#companyreviews .rating{
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+#companyreviews .star{
+    text-decoration: none;
+    color: #212529;
+}
+
+#companyreviews .checked{
+    color: orange;
+}
+
+#companyreviews .listreviews{
+    /* border: 2px solid black; */
+    margin: 30px 0px;
+}
+
+#companyreviews .listreviews li{
+    padding: 15px 0px;
+}
+
+.reviewdetails{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.cdetails .pagination{
+    justify-content: center;
+    margin: 40px 0px 10px;
+}
+
+.cdetails .feedback span{
+    border-bottom: 2px solid #023e8a;
+}
+
+
+@media (max-width: 600px){
+    #summary .column1, .column2, .column3{
+        padding: 15px 0px;
+    }
+}
+
+#submitreview .modal-body{
+    font-size: 1.12rem;
+}
+
+#submitreview .modal-header{
+  justify-content: center;
+}
+
+#submitreview .form-group{
+    margin-bottom: 18px;
+}
+
+#submitreview button[type="submit"]{
+    margin: 20px auto;
+    display: block;
+}
+
+
+/* ------------------------------employeeupdate.html-------------------------------------------- */
+
+.employeeupdate{
+    margin-top: 70px;
+    /* border: 2px solid black; */
+    padding: 3rem 1.7rem 0;
+    color: white;
+}
+
+.employeeupdate form{
+    /* border: 2px solid red; */
+    padding: 1.5rem;
+    width: 60%;
+    margin: 20px auto 10px;
+    font-size: 1.1rem;
+}
+
+.employeeupdate form .submit{
+    margin: 30px auto 0px;
+    display: block;
+}
+
+.employeeupdate .form-group{
+    margin-bottom: 20px;
+    /* width: 50%; */
+  }
+  
+  .employeeupdate .form-label{
+    font-weight: 600;
+    color: #fff;
+  }
+
+  .employeeupdate .form-control{
+    margin: 5px 0 7px;
+    padding: 10px 10px;
+    background: #ffffff;
+    border: 2px solid #ebebeb;
+    }
+
+  .employeeupdate .form-control:focus{
+	border: 1px solid #fff;
+    }
+
+
+@media(max-width: 600px){
+    .employeeupdate form{
+        width: 90%;
+    }
+}
+
+
+
+/* ---------------------------------companyupdate.html------------------------------------- */
+
+.companyupdate{
+    margin-top: 70px;
+    /* border: 2px solid black; */
+    padding: 3rem 1.7rem 0;
+    color: white;
+}
+
+.companyupdate form{
+    /* border: 2px solid red; */
+    padding: 1.5rem;
+    width: 60%;
+    margin: 20px auto 10px;
+    font-size: 1.1rem;
+}
+
+.companyupdate form .submit{
+    margin: 30px auto 0px;
+    display: block;
+}
+
+.companyupdate .form-group{
+    margin-bottom: 20px;
+    /* width: 50%; */
+  }
+  
+  .companyupdate .form-label{
+    font-weight: 600;
+    color: #fff;
+  }
+
+  .companyupdate .form-control{
+    margin: 5px 0 7px;
+    padding: 10px 10px;
+    background: #e9ffe10f;
+    border: 2px solid #ebebeb;
+    color: #fff;
+    }
+
+  .companyupdate .form-control:focus{
+	border: 1px solid #fff;
+    }
+
+
+@media(max-width: 600px){
+    .companyupdate form{
+        width: 90%;
+    }
+}
+
+.form-control:focus {
+    color: #212529;
+    background-color: #fff;
+    border-color: #86b7fe;
+    outline: 0;
+    box-shadow: none;
+}
+footer a{
+    color: #fff;
+}
+.lists ul li a{
+	color: #fff;
+}
+.social a i{
+	color: #fff;
+}
+.modal-dialog.modal-dialog-centered{
+	max-width: 750px !important;
+}
+.modal-dialog.modal-dialog-centered .modal-content{
+	    background: #115ab7;
+	    color: #fff;
+}
+footer .text-muted{
+    --bs-text-opacity: 1;
+    color: #ffffff !important;
+}

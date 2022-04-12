@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body style="background-image: url('images/empupdate.webp'); background-repeat: no-repeat;
+background-size: cover; background-position: center;">
+    <header>
+        <nav class="navbar navbar-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html">Reviews</a>
+              <!-- <button type="button" class="btn btn-outline-light d-flex me-3" data-bs-toggle="modal" data-bs-target="#loginModal">
+                Login
+            </button> -->
+            </div>
+          </nav>
+    </header>
+    
+    <main>
+        <div class="container employeeupdate">
+            <h1 class="text-center">Update Your Details</h1>
+            <form action="employeedetails.html">
+
+                <div class="form-group">
+                  <label for="empname" class="form-label">Employee's Name:</label>
+                  <input type="text" class="form-control input-lg" id="empname" placeholder="Employee's Name">
+                </div>
+              
+                <div class="form-group">
+                    <label for="jobtitle" class="form-label">Job Title:</label>
+                    <input type="text" class="form-control input-lg" id="jobtitle" placeholder="Job Title">
+                </div>
+    
+                <div class="form-group">
+                    <label for="recentcompany" class="form-label">Most Recent Company:</label>
+                    <input type="text" class="form-control input-lg" id="recentcompany" placeholder="Most Recent Company">
+                </div>
+
+                <div class="form-group">
+                  <label for="location" class="form-label">Location:</label>
+                  <input type="text" class="form-control input-lg" id="location" placeholder="Location">
+                </div>
+
+                <div class="form-group">
+                  <label for="about" class="form-label">About:</label>
+                  <textarea class="form-control" id="about" rows="4" placeholder="A little about yourself..."></textarea>
+                </div>
+
+                <div class="form-group">
+                  <label for="experience" class="form-label">Experience:</label>
+                  <button type="button" class="btn btn-outline-light d-block" id="experience" data-bs-toggle="modal" data-bs-target="#experienceModal">+ Add Experience</button>
+                </div>
+
+                <div class="form-group">
+                  <label for="skills" class="form-label">Skills:</label>
+                  <button type="button" class="btn btn-outline-light d-block" id="skills" data-bs-toggle="modal" data-bs-target="#skillsModal">+ Add Skills</button>
+                </div>
+
+                <div class="form-group">
+                  <label for="education" class="form-label">Education:</label>
+                  <button type="button" class="btn btn-outline-light d-block" id="education" data-bs-toggle="modal" data-bs-target="#educationModal">+ Add Education</button>
+                </div>
+
+                <div class="form-group">
+                  <label for="landc" class="form-label">Licenses and Certifications</label>
+                  <button type="button" class="btn btn-outline-light d-block" id="landc" data-bs-toggle="modal" data-bs-target="#landcModal">+ Add Licenses & Certifications</button>
+                </div>
+
+                <div class="form-group">
+                  <label for="photo" class="form-label">Edit Photo:</label>
+                  <input type="file" class="form-control input-lg" id="photo">
+                </div>
+    
+                <button type="submit" class="btn btn-success submit">Save Updates</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container-fluid">
+          <div class="social">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          </div>
+          
+          <div class="lists">
+            <ul>
+              <li>Reviews</li>
+              <li><a href="#">About/Press</a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>
+  
+            <ul>
+              <li>Community</li>
+              <li><a href="#">Help/Contact Us</a></li>
+              <li><a href="#">Guidelines</a></li>
+              <li><a href="#">Terms of use</a></li>
+              <li><a href="#">Privacy & Cookies</a></li>
+            </ul>
+  
+            <ul>
+              <li>Work With Us</li>
+              <li><a href="#">Advertisers</a></li>
+              <li><a href="#">Developers</a></li>
+              <li><a href="#">Careers</a></li>
+            </ul>
+          </div>
+  
+          <p class="text-muted">
+            &copy; Reviews 2022 
+          </p> 
+        </div>
+    </footer>
+
+    <!-- skills modal -->
+
+    <div id="skillsModal" class="modal fade">
+      <div class="modal-dialog modal-dialog-centered ">
+          <div class="modal-content">
+              <div class="modal-header text-white" style="background-color: #023e8a;">
+                  <h5 class="modal-title">Skills</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                  <div class="container">
+                      <div class="d-flex flex-column ">
+                          <form>
+
+                            <div class="form-group">
+                              <label for="addskills" class="form-label">Add Skills:</label>
+                              <input type="text" class="form-control input-lg" id="addskills" placeholder="e.g. Adobe Photoshop">
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-block btn-round">Add</button>
+                          </form>
+                      </div> 
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <!-- experience modal -->
+
+  <div id="experienceModal" class="modal fade">
+    <div class="modal-dialog modal-dialog-centered ">
+        <div class="modal-content">
+            <div class="modal-header text-white" style="background-color: #023e8a;">
+                <h5 class="modal-title">Experience</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="container">
+                    <div class="d-flex flex-column ">
+                        <form>
+
+                          <div class="form-group">
+                            <label for="profile" class="form-label">Profile:</label>
+                            <input type="text" class="form-control input-lg" id="profile" placeholder="e.g. Operations">
+                          </div>
+
+                          <div class="form-group">
+                            <label for="organization" class="form-label">Organization:</label>
+                            <input type="text" class="form-control input-lg" id="organization" placeholder="Organization's Name">
+                          </div>
+
+                          <div class="form-group">
+                            <label for="location" class="form-label">Location:</label>
+                            <input type="text" class="form-control input-lg" id="location" placeholder="Location">
+                          </div>
+
+                          <div class="form-group">
+                            <label for="startdate" class="form-label">Start Date:</label>
+                            <input type="date" class="form-control input-lg" id="startdate" placeholder="Choose Date">
+                          </div>
+
+                          <div class="form-group">
+                            <label for="enddate" class="form-label">End Date:</label>
+                            <input type="date" class="form-control input-lg" id="enddate" placeholder="Choose Date">
+                          </div>
+
+                          <div class="form-group">
+                            <label for="description" class="form-label">Description: (Optional)</label>
+                            <textarea class="form-control" id="description" rows="4" placeholder="Short description of work done"></textarea>
+                          </div>
+
+                          <button type="submit" class="btn btn-primary btn-block btn-round">Add</button>
+                        </form>
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
